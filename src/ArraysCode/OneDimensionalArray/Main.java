@@ -95,6 +95,11 @@ public class Main {
 //        array = code.resize(array, 13);
 //        System.out.println("Original Array Size After Size: " + array.length);
 //---------------------------------------------------------------------------/
-
+        // find the missing number in an array
+//        int[] array = {1,3,6,8,2,4,7};
+//        System.out.println(code.findMissingNum(array));
+//---------------------------------------------------------------------------/
+        String str = "tamsat";
+        System.out.println(code.checkPalindrome(str));
     }
 }

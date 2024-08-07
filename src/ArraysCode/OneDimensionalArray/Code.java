@@ -1,5 +1,7 @@
 package ArraysCode.OneDimensionalArray;
 
+import java.util.Arrays;
+
 public class Code {
 
     public void printArray(int[] array){
@@ -145,5 +147,25 @@ public class Code {
         }
         array = temp;
         return array;
+    }
+
+    // find the missing number in an array
+    public int findMissingNum(int[] array){
+      int n = array.length + 1;
+      int sum = n * (n + 1) / 2;
+      for(Integer num : array){
+          sum -= num;
+      }
+      return sum;
+    }
+
+    // check if a given String is a Palindrome method
+    public boolean checkPalindrome(String str){
+        char[] toChar = str.toCharArray();
+        String result = "";
+        for(int i=toChar.length - 1; i >= 0; i--){
+            result += toChar[i];
+        }
+        return result.equals(str);
     }
 }
