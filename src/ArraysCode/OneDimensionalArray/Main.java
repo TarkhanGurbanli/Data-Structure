@@ -99,7 +99,11 @@ public class Main {
 //        int[] array = {1,3,6,8,2,4,7};
 //        System.out.println(code.findMissingNum(array));
 //---------------------------------------------------------------------------/
-        String str = "tamsat";
-        System.out.println(code.checkPalindrome(str));
+//        String str = "tamsat";
+//        System.out.println(code.checkPalindrome(str));
+//---------------------------------------------------------------------------/
+        // find min and max value
+        int[] array = {1,2,3,4,5,6};
+        code.printArray(code.findMinAndMax(array));
     }
 }

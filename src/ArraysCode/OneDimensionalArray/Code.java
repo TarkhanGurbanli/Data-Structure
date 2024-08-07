@@ -168,4 +168,22 @@ public class Code {
         }
         return result.equals(str);
     }
+
+    // find min and max value
+    public int[] findMinAndMax(int[] array){
+        int[] result = new int[2];
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for(int i=0; i<array.length; i++){
+            if(array[i] < min){
+                min = array[i];
+            }
+            if(array[i] > max){
+                max = array[i];
+            }
+        }
+        result[0] = min;
+        result[1] = max;
+        return result;
+    }
 }
